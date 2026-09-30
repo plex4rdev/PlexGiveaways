@@ -1,0 +1,22 @@
+# ==============================================================================
+#                   PLEXGIVEAWAYS - DISCORD WEBHOOKS
+# ==============================================================================
+# Asynchronous, non-blocking Discord webhook dispatches with JSON serialization.
+# Placeholders: %winner%, %player%, %prize%, %reward%, %entry_count%
+
+discord:
+  enabled: false
+  url: "https://discord.com/api/webhooks/your/webhook/url"
+
+embeds:
+  on-start:
+    title: "⚡ PlexGiveaways Event Started!"
+    description: "A server giveaway has begun!\n\n**Prize:** %prize%\n**Eligible Participants:** %entry_count% players online\n\nRolling winner now..."
+    color: 53951 # Cyan (0x00D2FF)
+    thumbnail: false
+
+  on-finish:
+    title: "🎉 We Have a Winner!"
+    description: "Congratulations to **%winner%** for winning **%prize%**!\n\n**Total Players:** %entry_count%\nThank you to everyone who joined!"
+    color: 16765440 # Gold (0xFFD200)
+    thumbnail: true

@@ -1,0 +1,35 @@
+# ==============================================================================
+#                    PLEXGIVEAWAYS - REWARD POOLS
+# ==============================================================================
+# Custom reward configuration for each animation pool.
+# Supported pools: roulette, vortex, overhead, instant
+# Items retain 100% of their CustomModelData, potions, enchants, and components.
+# Commands are executed via secure, server-side verified voucher tokens.
+
+pools:
+  roulette:
+    items: []
+    commands:
+      - "give %player% diamond 32"
+      - "give %player% emerald 64"
+      - "eco give %player% 5000"
+
+  vortex:
+    items: []
+    commands:
+      - "give %player% netherite_scrap 8"
+      - "give %player% experience_bottle 64"
+      - "eco give %player% 7500"
+
+  overhead:
+    items: []
+    commands:
+      - "give %player% netherite_ingot 4"
+      - "give %player% emerald_block 8"
+      - "eco give %player% 6000"
+
+  instant:
+    items: []
+    commands:
+      - "give %player% diamond 48"
+      - "eco give %player% 3000"

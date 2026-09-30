@@ -1,0 +1,38 @@
+# ==============================================================================
+#                    PLEXGIVEAWAYS - MESSAGES CONFIGURATION
+# ==============================================================================
+# Modern gradient hex colors (&#00d2ff, &#00f2fe, &#ffd200) and standard & codes.
+# Dynamic placeholders: %player%, %winner%, %prize%, %reward%, %time%, %seconds%, %entry_count%
+
+chat:
+  prefix: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &f"
+  already-active: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#ff4757A giveaway is already active and rolling!"
+  cooldown-active: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#ff4757Please wait &#ffd200%seconds%s &fbefore launching another giveaway."
+  insufficient-players: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#ff4757Need &#ffd200%required% &fmore player(s) to start."
+  no-eligible-winners: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#ff4757No eligible participants online to receive rewards."
+  reroll-broadcast: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#2ecc71Winner rerolled! Lucky winner: &#00f2fe%winner%&f!"
+  winner-disconnected: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#ff4757The selected winner disconnected from the server."
+  inventory-overflow: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#ffd200Your inventory was full! Reward dropped at your feet."
+  admin-aborted: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#ff4757The giveaway was aborted by an administrator."
+  voucher-expired: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#ff4757Your reward voucher has expired."
+  invalid-voucher: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#ff4757This voucher is invalid, already redeemed, or counterfeit!"
+  voucher-claimed: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#2ecc71Successfully redeemed your reward token!"
+
+titles:
+  claimed:
+    header: "&#00d2ff&l✦ REWARD REDEEMED ✦"
+    footer: "&#ffffffClaimed reward token!"
+  roulette:
+    title: "&#00d2ff&l🎲 ROLLING..."
+    subtitle: "&#ffffffSelecting lucky winner!"
+  roulette-win:
+    title: "&#ffd200&l★ WINNER! ★"
+    subtitle: "&#00f2fe%player% &#ffffffwon &#ffd200%prize%!"
+  vortex:
+    title: "&#00d2ff&l✦ REWARD INFUSED ✦"
+    subtitle: "&#ffffffYou absorbed the giveaway reward!"
+
+vouchers:
+  display-name: "&#00d2ff&l✦ &#00f2fe&lMYSTIC REWARD TOKEN &#00d2ff&l✦"
+  redeemed: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#2ecc71CLAIMED! &fYou redeemed &#00f2fe&l%reward%&f!"
+  inventory-full: "&#00d2ff&lPLEX&#00f2fe&lGIVEAWAYS &8» &#ffd200WARNING! &fYour inventory was full; item dropped at your feet."

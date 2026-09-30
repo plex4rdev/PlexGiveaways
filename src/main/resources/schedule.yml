@@ -1,0 +1,40 @@
+# ==============================================================================
+#                      PLEXGIVEAWAY - SCHEDULE CONFIGURATION
+# ==============================================================================
+# Configure automatic giveaways and timers.
+
+scheduler:
+  # Enable or disable the automated giveaway timer
+  enabled: true
+
+  # Time between automated giveaways in seconds (e.g. 1800 = 30 minutes, 3600 = 1 hour, 0 = disabled)
+  interval-seconds: 1800
+
+  # Minimum online, non-exempt players required to launch a giveaway
+  min-players: 2
+
+  # Chat countdown announcements before an automated giveaway triggers (in seconds)
+  countdown-announcements:
+    - 60
+    - 30
+    - 15
+    - 10
+    - 5
+    - 3
+    - 2
+    - 1
+
+  # Optional fixed daily schedule (24-hour time HH:mm format, server local time)
+  fixed-times:
+    enabled: false
+    times:
+      - "14:00"
+      - "18:00"
+      - "22:00"
+
+  # Countdown BossBar settings
+  bossbar:
+    enabled: true
+    title: "&#00d2ff&l⚡ NEXT GIVEAWAY &8» &#00f2fe%time%"
+    color: "BLUE" # Available: BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
+    style: "SOLID" # Available: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20

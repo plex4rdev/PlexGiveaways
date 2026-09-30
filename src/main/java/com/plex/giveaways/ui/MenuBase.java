@@ -1,0 +1,18 @@
+package com.plex.giveaways.ui;
+
+import org.bukkit.inventory.Inventory;
+import org.bukkit.inventory.InventoryHolder;
+import org.jetbrains.annotations.NotNull;
+
+public abstract class MenuBase implements InventoryHolder {
+    protected Inventory inventory;
+
+    public void setInventory(Inventory inventory) {
+        this.inventory = inventory;
+    }
+
+    @Override
+    public @NotNull Inventory getInventory() {
+        return this.inventory;
+    }
+}

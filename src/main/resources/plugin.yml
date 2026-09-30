@@ -1,0 +1,53 @@
+name: PlexGiveaways
+version: '1.0.0'
+main: com.plex.giveaways.PlexGiveaways
+api-version: '1.21'
+load: POSTWORLD
+authors: [ Plex ]
+description: High-performance automated giveaway engine with interactive UI roulette and volumetric particle systems.
+softdepend: [PlaceholderAPI]
+commands:
+  giveaway:
+    description: Core command for the PlexGiveaways suite.
+    usage: /giveaway <start|stop|reroll|menu|cv|givevoucher|reload|support>
+    aliases: [gw, pgw, plexgiveaways, plexgw]
+
+permissions:
+  plex.giveaways.admin:
+    description: Full administrative privileges for PlexGiveaways.
+    default: op
+    children:
+      plex.giveaways.start: true
+      plex.giveaways.cancel: true
+      plex.giveaways.reroll: true
+      plex.giveaways.menu: true
+      plex.giveaways.voucher: true
+      plex.giveaways.reload: true
+
+  plex.giveaways.start:
+    description: Allows force-starting server giveaways.
+    default: op
+
+  plex.giveaways.cancel:
+    description: Allows aborting active giveaways.
+    default: op
+
+  plex.giveaways.reroll:
+    description: Allows rerolling a winner.
+    default: op
+
+  plex.giveaways.menu:
+    description: Allows opening the management dashboard.
+    default: op
+
+  plex.giveaways.voucher:
+    description: Allows issuing and managing vouchers.
+    default: op
+
+  plex.giveaways.reload:
+    description: Allows hot-reloading configurations.
+    default: op
+
+  plex.giveaways.exempt:
+    description: Exempts player from winning giveaways.
+    default: false

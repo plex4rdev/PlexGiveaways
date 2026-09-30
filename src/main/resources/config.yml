@@ -1,0 +1,89 @@
+# ==============================================================================
+#                    PLEXGIVEAWAYS - CORE CONFIGURATION
+# ==============================================================================
+
+general:
+  debug-mode: false
+  min-participants-to-start: 1
+  cooldown-between-giveaways-seconds: 15
+  community-discord: "https://discord.gg/plex"
+
+vouchers:
+  default-expiration-minutes: 10
+  item: "NETHER_STAR" # Material name (e.g. NETHER_STAR, GOLD_INGOT, PAPER)
+  lore-format:
+    - "&8━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    - "&#718096Right-click to claim your exclusive server reward."
+    - ""
+    - "&#00f2fe⏱ &#ffffffExpires in: &#ffd200%duration%"
+    - "&#00d2ff▶ &#ffffffClick with main-hand to redeem"
+    - "&8━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  redeem-effects:
+    particles: true
+    particle-name: "HAPPY_VILLAGER"
+    sound-name: "ENTITY_PLAYER_LEVELUP"
+    sound-volume: 1.0
+    sound-pitch: 1.2
+
+animations:
+  roulette:
+    enabled: true
+    weight: 35
+    display: "&#00d2ff&lUI Roulette Wheel"
+    icon: "HOPPER"
+  vortex:
+    enabled: true
+    weight: 35
+    display: "&#ffffff&lParticle Vortex"
+    icon: "NETHER_STAR"
+  overhead:
+    enabled: true
+    weight: 15
+    display: "&#ffd200&lOverhead Crown Shuffle"
+    icon: "GOLDEN_HELMET"
+  instant:
+    enabled: true
+    weight: 15
+    display: "&#00f2fe&lInstant Roll"
+    icon: "CLOCK"
+
+announcements:
+  start:
+    - "&8━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    - "           &#00d2ff&l✦ &#00f2fe&lPLEX GIVEAWAYS STARTED &#00d2ff&l✦"
+    - " "
+    - "  &#ffffffPrize Pool: &#ffd200&l%prize%"
+    - "  &#ffffffParticipants: &#00f2fe&l%entry_count% &#ffffffplayers online"
+    - "  &#718096A lucky winner is being selected right now... Good luck!"
+    - " "
+    - "&8━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+  winner:
+    - "&8━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+    - "           &#ffd200&l★ &#fff000&lGIVEAWAY CONCLUDED &#ffd200&l★"
+    - " "
+    - "  &#ffffffWinner: &#00f2fe&l%winner%"
+    - "  &#ffffffReward: &#ffd200&l%prize%"
+    - "  &#718096Congratulations to our lucky winner!"
+    - " "
+    - "&8━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+
+display-bar:
+  active:
+    enabled: true
+    color: "BLUE"
+    style: "SOLID"
+    text: "&#00d2ff&l⚡ PLEX GIVEAWAY &8» &#ffffffSelecting Winner..."
+  winner:
+    color: "YELLOW"
+    style: "SOLID"
+    text: "&#ffd200&l★ CONGRATULATIONS &8» &#00f2fe%winner% &#ffffffwon &#ffd200%reward%!"
+
+rolling-icons:
+  - MACE
+  - HEAVY_CORE
+  - NETHERITE_SWORD
+  - ELYTRA
+  - TOTEM_OF_UNDYING
+  - ENCHANTED_GOLDEN_APPLE
+  - NETHER_STAR
+  - DIAMOND_BLOCK
